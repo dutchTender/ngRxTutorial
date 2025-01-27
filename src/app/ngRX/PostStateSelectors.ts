@@ -5,8 +5,8 @@ import {PostAppStateWrapper} from '../interfaces/PostAppStateWrapper';
 export const postFeaturesSlice = (appState: PostAppStateWrapper) => appState.postData;
 
 export const postsLoadingStatusSelector = createSelector(
-             postFeaturesSlice,
-    (state) => state.isLoading
+  postFeaturesSlice,
+  (state) => state.isLoading
 );
 
 export const postsContentSelector = createSelector(
